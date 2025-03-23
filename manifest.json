@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Coronavirus Immunity",
+  "version": "0.1.0",
+  "description": "A Chrome extension that modifies the appearance of the word 'coronavirus' on webpages.",
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
