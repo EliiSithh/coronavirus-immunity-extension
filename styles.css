@@ -5,7 +5,8 @@ body {
 
 /* Animate the word 'coronavirus' */
 .rainbow {
-  animation: rainbow 600ms infinite;
+  font-weight: bold;
+  animation: rainbow 1s infinite;
 }
 
 @keyframes rainbow {
@@ -17,5 +18,3 @@ body {
   75% { color: indigo; }
   90% { color: purple; }
 }
-
-  
